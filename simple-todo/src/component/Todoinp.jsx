@@ -18,7 +18,7 @@ const Todoinp = ({handleadd})=>{
             <input
             className={styleinp.inp}
             value={text}
-            placeholder = "   Add a to-do"
+            placeholder = "Add a to-do"
             onChange={handlechange} 
             type="text"/>
             <input className={styleinp.inputbtn} type="submit" value="+"/>

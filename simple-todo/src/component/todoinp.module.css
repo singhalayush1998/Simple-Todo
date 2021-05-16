@@ -1,22 +1,23 @@
 .inputbtn{
     width: 15%;
-    font-size: 35px;
-    height: 50px;
-    color: white;
+    padding: 5px;
+    font-size: 20px;
+    border: 0px;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
     background-color: #30b7e0 ;
     outline: white;
-    border-radius: 1rem;
-    border: 0px;
+    color: white;
 }
 .inp{
-    height: 30px;
     width: 65%;
-    border: 0px;
-    background-color: #bbc9b0 ;
     color: rgb(5, 5, 5);
     font-size: 20px;
+    padding: 5px 20px;
+
+    border: 0px;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    background-color: #bbc9b0 ;
     outline: white;
-    opacity: .8;
-    padding: 20px;
-    border-radius: 1rem;
 }

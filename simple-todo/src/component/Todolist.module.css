@@ -6,17 +6,19 @@
     text-align: left;
 }
 .inpcheck{
-    height: 22px;
-    width: 22px;
+    height: 18px;
+    width: 18px;
 }
 .titlediv{
     width: 100%;
+    max-width: 180px;
+    word-wrap: break-word;
     margin-left: 3%;
     font-size:large;
     font-weight: 600;
 }
 .delbtn{
-    font-size: 120%;
+    font-size: 110%;
 }
 .delbtn:hover{
     cursor: pointer;

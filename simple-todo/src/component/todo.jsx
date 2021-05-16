@@ -27,7 +27,9 @@ function Todo(){
                 <div className={styletodo.todo}>
                     <h1>To-Do</h1>
                     <Todoinp handleadd={handleAdd}/>
-                    <button onClick={()=>setShowcom(!showcom)}>{showcom?"Hide Completed Task":"Show Completed tasks"}</button>
+                    <div className={styletodo.combtn}>
+                        <div onClick={()=>setShowcom(!showcom)}>{showcom?"Hide Completed Task":"Show Completed tasks"}</div>
+                    </div>
                     <div className={styletodo.lists}>
                     {
                         data.filter(item=>!item.status).map(item=>
@@ -42,23 +44,26 @@ function Todo(){
                         )
                     }
                     </div>
-                    <div className={styletodo.lists}>
-                    {showcom &&
-                        <>
-                        {
-                            data.filter(item=>item.status).map(item=><Todolist
-                                key={item.id}
-                                status={item.status}
-                                handleDelete={handleDelete}
-                                id={item.id}
-                                handleToggle={handleToggle}
-                                Title={item.Title}
-                            />)
+                    <div style={{height:"32vh"}}>
+                        {showcom &&
+                            <>
+                            <div>Completed Tasks</div>
+                            <div className={styletodo.lists}>
+                            {
+                                data.filter(item=>item.status).map(item=><Todolist
+                                    key={item.id}
+                                    status={item.status}
+                                    handleDelete={handleDelete}
+                                    id={item.id}
+                                    handleToggle={handleToggle}
+                                    Title={item.Title}
+                                />)
+                            }
+                            </div>
+                            </>
                         }
-                        </>
-                    }
                     </div>
-                    <div>
+                    <div style={{border:"1px solid black"}}>
                         <div>Prepared by Ayush</div>
                     </div>
                 </div>
