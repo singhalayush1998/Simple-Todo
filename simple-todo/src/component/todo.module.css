@@ -13,10 +13,10 @@
 }
 .todo{
     margin: auto;
-    height: 85vh;
+    height: 84vh;
     border-radius: 2rem;
-    width: 70%;
-    background-image:linear-gradient(grey,blue,rgb(64, 253, 47));
+    width: 350px;
+    background-image:linear-gradient(grey,rgb(22, 107, 177),rgb(64, 253, 47));
     background-color: #ffffff;
     border: 1px solid black;
     text-align: center;
@@ -25,17 +25,21 @@
 .lists{
     width: 90%;
     margin: auto;
-    height: 25vh;
+    height: 26vh;
     overflow-y: scroll;
 }
 .lists::-webkit-scrollbar{
     width: 2px;
     border-radius: 2rem;
-    /* background-color: palevioletred; */
 }
 .lists::-webkit-scrollbar-thumb{
-    background-color:black;
+    background-color:rgb(116, 114, 114);
 }
-/* @media  {
-    
+/* @media (max-width: 700px) {
 } */
+@media only screen and (max-width: 900px) {
+    .sometry{
+        width: 100%;
+        padding: 2rem 0rem;
+    }  
+}
