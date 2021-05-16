@@ -1,0 +1,22 @@
+.inputbtn{
+    width: 15%;
+    font-size: 35px;
+    height: 50px;
+    color: white;
+    background-color: #30b7e0 ;
+    outline: white;
+    border-radius: 1rem;
+    border: 0px;
+}
+.inp{
+    height: 30px;
+    width: 65%;
+    border: 0px;
+    background-color: #bbc9b0 ;
+    color: rgb(5, 5, 5);
+    font-size: 20px;
+    outline: white;
+    opacity: .8;
+    padding: 20px;
+    border-radius: 1rem;
+}

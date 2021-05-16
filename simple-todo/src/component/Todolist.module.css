@@ -1,0 +1,23 @@
+.list{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+    text-align: left;
+}
+.inpcheck{
+    height: 22px;
+    width: 22px;
+}
+.titlediv{
+    width: 100%;
+    margin-left: 3%;
+    font-size:large;
+    font-weight: 600;
+}
+.delbtn{
+    font-size: 120%;
+}
+.delbtn:hover{
+    cursor: pointer;
+}
