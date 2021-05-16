@@ -14,7 +14,7 @@
     height: 84vh;
     text-align: center;
     margin: auto;
-    background-image:linear-gradient(rgb(60,116,148),#7dbb92);
+    background-image:linear-gradient(rgb(109, 98, 255),#7dbb92);
     background-color: #ffffff;
     border: 1px solid black;
     border-radius: 2rem;
@@ -33,7 +33,27 @@
 .lists::-webkit-scrollbar-thumb{
     background-color:rgb(116, 114, 114);
 }
+.combtndiv{
+    display: flex;
+    justify-content: space-between;
+}
 .combtn{
-    text-align: right;
     padding: 0px .5rem;
+}
+.combtn:hover{
+    cursor: pointer;
+}
+.details{
+    /* border:1px solid black; */
+    display:flex;
+    justify-content:space-evenly;
+    background:black;
+    color:white;
+    height:27px;
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+a {
+    color: white;
+    text-decoration: none;
 }
