@@ -1,5 +1,6 @@
 .main{
     width: 100%;
+    background-color: black;
     height: 100vh;
     background-image: url("https://cdn.wallpapersafari.com/2/79/eHYVso.jpg");
     background-repeat: no-repeat;
@@ -12,6 +13,7 @@
 .todo{
     width: 350px;
     height: 84vh;
+    max-height: 545px;
     text-align: center;
     margin: auto;
     background-image:linear-gradient(rgb(109, 98, 255),#7dbb92);
@@ -24,6 +26,7 @@
     width: 90%;
     margin: auto;
     height: 26vh;
+    max-height: 220px;
     overflow-y: scroll;
 }
 .lists::-webkit-scrollbar{
@@ -44,16 +47,50 @@
     cursor: pointer;
 }
 .details{
-    /* border:1px solid black; */
     display:flex;
     justify-content:space-evenly;
     background:black;
     color:white;
-    height:27px;
+    height: 27px;;
+    width: 350px;
+    margin: auto;
+    margin-top: -27px;
     border-bottom-right-radius: 2rem;
     border-bottom-left-radius: 2rem;
 }
 a {
     color: white;
     text-decoration: none;
+}
+.detailsimg{
+    width:20px;
+    height:20px;
+    padding:.15rem;
+}
+@media(max-width:500px) {
+    .main{
+        width: 100%;
+        background-color: black;
+        background-image: none;
+    }
+    .sometry{
+        width: 100%;
+        padding: 0;
+        padding-top: 3rem;
+    }
+    .todo{
+        width: 250px;
+        margin: auto;
+    }
+    .details{
+        width: 250px;
+        margin: auto;
+        margin-top: -27px;
+        font-size: x-small;
+    }
+    .detailsimg{
+        width:15px;
+        height:15px;
+        padding:.15rem;
+    }
 }

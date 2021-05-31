@@ -65,22 +65,22 @@ function Todo(){
                             </>
                         }
                     </div>
+                </div>
                     <div className={styletodo.details}>
                         <div>Prepared by Ayush</div>
                         <a href="https://github.com/singhalayush1998/Simple-Todo/tree/master/simple-todo">
                             <div style={{display:"flex"}}>
-                                <img width="20px" height="20px" style={{padding:".15rem"}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5Sh_y95E_kbXOuzcT4j3BFzY2ucavlQkKDQ&usqp=CAU" alt="" />
+                                <img className={styletodo.detailsimg}  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5Sh_y95E_kbXOuzcT4j3BFzY2ucavlQkKDQ&usqp=CAU" alt="" />
                                 <div>GitHub</div>
                             </div>
                         </a>
                         <a href="https://www.linkedin.com/in/ayush-singhal-a238b513b/">
                             <div style={{display:"flex"}}>
-                                <img width="25px" height="25px" src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG38.png" alt="" />
+                                <img className={styletodo.detailsimg} src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG38.png" alt="" />
                                 <div>LinkedIn</div>
                             </div>
                         </a>
                     </div>
-                </div>
             </div>
         </div>
     )
